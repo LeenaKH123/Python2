@@ -4,3 +4,8 @@
 #
 # user_input = "hello"
 # result = {"h": 1, "e": 1, "l": 2, "o": 1}
+x = input("type your string without spaces ")
+freq = {}
+for c in set(x):
+    freq[c] = x.count(c)
+print(freq)

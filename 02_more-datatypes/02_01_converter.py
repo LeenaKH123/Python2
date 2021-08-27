@@ -4,3 +4,6 @@
 # Do you notice any difference to iterating over the string?
 
 string = "codingnomads"
+
+tuple1 = tuple(string)
+print(tuple1)

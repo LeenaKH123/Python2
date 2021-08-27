@@ -5,3 +5,12 @@
 # - Convert the list back into a tuple.
 
 string = "codingnomads"
+string = "codingnomads"
+StringtoTuple = tuple(string)
+print(StringtoTuple)
+TupletoList = list(StringtoTuple)
+print(TupletoList)
+TupletoList[0] = "k"
+print(TupletoList)
+ListtoTuple = tuple(TupletoList)
+print(ListtoTuple)
