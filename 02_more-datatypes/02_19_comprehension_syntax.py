@@ -6,3 +6,8 @@
 # but try to do it using a list comprehension.
 
 word = "codingnomads"
+# print(list(word))
+list_ = []
+for char in word:
+    list_.append(char)
+print(list_)
