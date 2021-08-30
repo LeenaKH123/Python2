@@ -22,3 +22,17 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+for dictionary in office:
+    full_name = dictionary["full_name"]
+    item = dictionary["item"]
+    list_ = full_name.split(" ")
+    if len(list_) == 3:
+        first_name = list_[0] + " " + list_[1]
+        last_name = list_[2]
+    else:
+        first_name = list_[0]
+        last_name = list_[1]
+
+    # "The inspiring quote" - Lastname, Firstname
+    # print(f"Hello {name}. Next year you'll be {age + 1}!")
+    print(f'{last_name}, {first_name}      {item}')
