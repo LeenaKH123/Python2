@@ -8,5 +8,11 @@
 # even if you don't yet completely understand why it works the way it does:
 # https://docs.python.org/3/howto/sorting.html#key-functions
 # Feel free to discuss any questions you have with your mentor and on the forum!
+
 input_dict = {"item1": 5, "item2": 6, "item3": 1}
-print(input_dict.items())
+items_ = sorted(input_dict.items())
+sortedbykey = {k:v for k, v in sorted(input_dict.items())}
+sortedbyvalue = {k:v for k, v in sorted(input_dict.items(), key = lambda v:v[1])}
+print(sortedbykey)
+print(sortedbyvalue)
+  
