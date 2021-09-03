@@ -3,8 +3,15 @@
 # After your fixes, the function should allow you to take a name as an input
 # and return a greeting message that you can save to a variable.
 
-function say_hello("name"):
-        return print(f"Hello {name}!")
+# from os import name
 
-greeting = hello(name)
-print(greeting)
+
+def say_hello(name):
+    #     return print(f"Hello {name}!")
+    print(f"Hello {name}!")
+
+
+# greeting = say_hello("lina")
+# print(greeting)
+
+say_hello("lina")

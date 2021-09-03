@@ -6,7 +6,7 @@
 # print row
 import csv
 
-with open("filecounts.csv") as f:
+with open("03_file-input-output/file-counter/filecounts.csv") as f:
     reader = csv.reader(f)
     for row in reader:
         print(row)
