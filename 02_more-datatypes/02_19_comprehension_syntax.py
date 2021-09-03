@@ -6,7 +6,10 @@
 # but try to do it using a list comprehension.
 
 word = "codingnomads"
+<<<<<<< HEAD
 # word = "codingnomads"
+=======
+>>>>>>> 6c32bfe7980fffb160c8a3c13ccab51d4242e643
 # print(list(word))
 list_ = []
 for char in word:
