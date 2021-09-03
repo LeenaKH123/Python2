@@ -35,8 +35,4 @@ for dictionary in office:
 
     # "The inspiring quote" - Lastname, Firstname
     # print(f"Hello {name}. Next year you'll be {age + 1}!")
-<<<<<<< HEAD
     print(f"{last_name}, {first_name}      {item}")
-=======
-    print(f'{last_name}, {first_name}      {item}')
->>>>>>> 6c32bfe7980fffb160c8a3c13ccab51d4242e643
