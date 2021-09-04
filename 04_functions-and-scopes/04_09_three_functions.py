@@ -7,22 +7,22 @@
 # print(sys.getrecursionlimit(1500))
 def fun1(a, b):
     c = a + b
-    d = fun2(6, 7)
     if (a + b) > 0:
-        return c + d
+        return c
+        d = fun2(6, 7)
 
 
 def fun2(x, y):
     z = x * y
-    f = fun3(15)
     if (x + y) > 0:
-        return z + f
+        return z
+        f = fun3(15)
 
 
 def fun3(z):
     if z > 0:
+        return z
         h = fun1(3, 6) + fun2(4, 9)
-    return h
 
 
 print(fun1(9, 10), fun2(20, 40), fun3(10))

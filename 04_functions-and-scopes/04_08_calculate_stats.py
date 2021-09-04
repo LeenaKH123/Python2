@@ -8,7 +8,7 @@ example_list = [1, 2, 3, 4, 5, 6, 7]
 def stats(example_):
     total = 0
     counter = 0
-    minimum = 0
+    minimum = float("inf")
     maximum = 0
     average = 0
     for num in example_:
@@ -16,7 +16,7 @@ def stats(example_):
         counter = counter + 1
         if num > maximum:
             maximum = num
-        else:
+        if num < minimum:
             minimum = num
     average = total / counter
     print("maximum", maximum)
