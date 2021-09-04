@@ -3,3 +3,11 @@
 # is why your function should be able to take an arbitrary amount of
 # keyword arguments, and display them all in a list form with some
 # introductory information.
+
+
+def estate(**kwargs):
+    for k, v in kwargs.items():
+        print(k, v)
+
+
+print("estate information", estate(city="NY", building="new"))
