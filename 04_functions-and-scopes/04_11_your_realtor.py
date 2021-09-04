@@ -4,7 +4,7 @@
 # keyword arguments, and display them all in a list form with some
 # introductory information.
 
-estate_list = [("NY", "building1"), ("DC", "building2")]
+estate_list = {"NY": "building1", "DC": "building2"}
 
 
 def estate(**kwargs):
@@ -12,4 +12,4 @@ def estate(**kwargs):
         print(k, v)
 
 
-print("estate information", estate(estate_list))
+print("estate information", estate(**estate_list))
