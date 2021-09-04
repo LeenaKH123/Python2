@@ -4,10 +4,12 @@
 # keyword arguments, and display them all in a list form with some
 # introductory information.
 
+estate_list = [("NY", "building1"), ("DC", "building2")]
+
 
 def estate(**kwargs):
     for k, v in kwargs.items():
         print(k, v)
 
 
-print("estate information", estate(city="NY", building="new"))
+print("estate information", estate(estate_list))
