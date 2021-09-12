@@ -4,6 +4,7 @@
 # already defined in the `codingnomads/` folder.
 
 
-import codingnomads.recipes.soup
-soup = make_soup(potato)
+import codingnomads.recipes.soup as d
+import codingnomads.ingredients as g
+soup = d.make_soup(g.potato)
 print(soup)
