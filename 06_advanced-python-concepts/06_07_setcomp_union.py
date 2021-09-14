@@ -31,5 +31,6 @@ t = {2, 3, 4, 5, 7}
 # print(union_set_squared)
 # ---end of working code 2 ---
 
-union_set = [number**2 for number in s|t if number > 2 ]
-print(set(union_set))
+# union_set = set([number**2 for number in s|t if number > 2 ])
+union_set = {number**2 for number in s|t if number > 2}
+print(union_set)
