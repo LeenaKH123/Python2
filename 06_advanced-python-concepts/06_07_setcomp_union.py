@@ -10,5 +10,13 @@
 
 s = {1, 2, 3, 4}
 t = {2, 3, 4, 5, 7}
-union_list = [itemS**2 | itemT**2 for itemS in s for itemT in t if itemS > 2 if itemT > 2 ]
+union_list = {}
+for itemS in s:
+    for itemT in t:
+        if itemS>2 and itemT>2:
+            union_list = (s|t)
+
+union_list = [number**2 for number in union_list]
 print(union_list)
+# union_list = [itemS**2 | itemT**2 for itemS in s for itemT in t if itemS > 2 if itemT > 2 ]
+# print(union_list)
