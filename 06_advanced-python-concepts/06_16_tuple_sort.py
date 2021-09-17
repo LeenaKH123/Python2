@@ -4,4 +4,16 @@
 # unsorted_list = [('first_element', 4), ('second_element', 2), ('third_element', 6)]
 # sorted_list = [('second_element', 2), ('first_element', 4), ('third_element', 6)]
 
-unsorted_list = [('first_element', 4), ('second_element', 2), ('third_element', 6)]
+
+# mycode starts here ---
+# unsorted_list = [('first_element', 4), ('second_element', 2), ('third_element', 6)]
+# list_of_tuples.sort(key=lambda x:x[1])
+# print(unsorted_list.sort(key=lambda x:x[1]))
+# my code ends here
+
+# gillads code
+unsorted_list = [("first_element", 4), ("second_element", 2), ("third_element", 6)]
+# list_of_tuples.sort(key=lambda x:x[1])
+
+unsorted_list.sort(key=lambda x: x[1])
+print(unsorted_list)

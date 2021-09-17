@@ -15,3 +15,17 @@
 
 base = 10
 digits = set(range(base))
+
+alphabet =  range(2)
+base = 2
+print(dict((x*base**2+y*base+z,(x,y,z)) for x in alphabet 
+                                  for y in alphabet 
+                                  for z in alphabet ))
+
+# another way
+
+# alphabet =  range(10)
+# base = 10
+# dict((x*base**2+y*base+z,(x,y,z)) for x in alphabet 
+#                                   for y in alphabet 
+#                                   for z in alphabet )
