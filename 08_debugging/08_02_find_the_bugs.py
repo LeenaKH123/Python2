@@ -1,18 +1,25 @@
 # The code below contains a few bugs. Use your debugger to find and fix them.
 
-unsorted_list = [('first_element', 4), ('second_element', 2), ('third_element', 6)]
+unsorted_list = [
+    ("first_element", 4),
+    ("second_element", 2),
+    ("third_element", 6),
+    ("fourth element", 1),
+]
 sorted_list = []
 
-for x in range(1, len(unsorted_list)):
-    minimum = unsorted_list[0][0]
+for x in range(0, len(unsorted_list)):
+    minimum = unsorted_list[0][1]
     index = 0
-    breakpoint()
+
     for i in range(1, len(unsorted_list)):
         if unsorted_list[i][1] < minimum:
-            minimum = unsorted_list[i][i]
+            minimum = unsorted_list[i][1]
             index = i
-            breakpoint()
+
     sorted_list.append(unsorted_list[index])
     unsorted_list.remove(unsorted_list[index])
-    breakpoint()
+
+# second
+#  unsorted_list.append()
 print(sorted_list)

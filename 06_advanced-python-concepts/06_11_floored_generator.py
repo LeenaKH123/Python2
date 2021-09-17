@@ -4,4 +4,10 @@
 nums = range(1, 1000000)
 generator = (x for x in nums)
 for x in generator:
-    print(x//1111)
+    print(x // 1111)
+
+# nums = range(1, 1000000)
+# generator = (x for x in nums)
+# for item in generator:
+#     if item % 1111 == 0:
+#         print(item // 1111)
